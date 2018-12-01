@@ -1,0 +1,42 @@
+{
+    "targetPlatforms": [
+        "aplite", 
+        "basalt", 
+        "chalk", 
+        "diorite"
+    ], 
+    "displayName": "Digital", 
+    "name": "Digital", 
+    "messageKeys": {
+        "dummy": 10000
+    }, 
+    "companyName": "KsMomOf2", 
+    "enableMultiJS": true, 
+    "versionLabel": "1.0", 
+    "capabilities": [], 
+    "sdkVersion": "3", 
+    "appKeys": {
+        "dummy": 10000
+    }, 
+    "longName": "Digital", 
+    "shortName": "Digital", 
+    "watchapp": {
+        "watchface": true
+    }, 
+    "resources": {
+        "media": [
+            {
+                "type": "font", 
+                "name": "FONT_PERFECT_DOS_48", 
+                "file": "fonts/perfect-dos-vga.ttf", 
+                "compatibility": "2.7"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "IMAGE_BACKGROUND", 
+                "file": "images/background.png"
+            }
+        ]
+    }, 
+    "uuid": "fa6ef243-e225-44d9-acce-6389a66f033c"
+}
