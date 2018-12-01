@@ -1,5 +1,5 @@
 #include <pebble.h>
-
+// TODO Need to add comments
 static Window *s_main_window;
 static TextLayer *s_time_layer;
 static GFont s_time_font;
