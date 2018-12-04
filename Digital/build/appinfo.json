@@ -8,15 +8,19 @@
     "displayName": "Digital", 
     "name": "Digital", 
     "messageKeys": {
-        "dummy": 10000
+        "CONDITIONS": 10001, 
+        "TEMPERATURE": 10000
     }, 
     "companyName": "KsMomOf2", 
     "enableMultiJS": true, 
     "versionLabel": "1.0", 
-    "capabilities": [], 
+    "capabilities": [
+        "location"
+    ], 
     "sdkVersion": "3", 
     "appKeys": {
-        "dummy": 10000
+        "CONDITIONS": 10001, 
+        "TEMPERATURE": 10000
     }, 
     "longName": "Digital", 
     "shortName": "Digital", 
@@ -28,6 +32,12 @@
             {
                 "type": "font", 
                 "name": "FONT_PERFECT_DOS_48", 
+                "file": "fonts/perfect-dos-vga.ttf", 
+                "compatibility": "2.7"
+            }, 
+            {
+                "type": "font", 
+                "name": "FONT_PERFECT_DOS_20", 
                 "file": "fonts/perfect-dos-vga.ttf", 
                 "compatibility": "2.7"
             }, 

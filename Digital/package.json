@@ -10,6 +10,11 @@
     "uuid": "fa6ef243-e225-44d9-acce-6389a66f033c",
     "sdkVersion": "3",
     "enableMultiJS": true,
+	"capabilities": ["location"],
+	"messageKeys": [
+		"TEMPERATURE",
+		"CONDITIONS"
+		],
     "targetPlatforms": [
       "aplite",
       "basalt",
@@ -19,9 +24,6 @@
     "watchapp": {
       "watchface": true
     },
-    "messageKeys": [
-      "dummy"
-    ],
     "resources": {
       "media": [
 	  {
@@ -32,7 +34,7 @@
 	  },
 	  {
 	  "type": "font",
-	  "name": "FONT_PERFECT_DOS_34",
+	  "name": "FONT_PERFECT_DOS_20",
 	  "file": "fonts/perfect-dos-vga.ttf",
 	  "compatibility":"2.7"
 	  },
