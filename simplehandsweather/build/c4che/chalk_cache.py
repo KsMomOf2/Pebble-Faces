@@ -47,7 +47,7 @@ PEBBLE_SDK_ROOT = '/home/ksmomof2/.pebble-sdk/SDKs/current/sdk-core/pebble'
 PLATFORM = {'TAGS': ['chalk', 'color', 'round', 'mic', 'strap', 'strappower', 'compass', 'health', '180w', '180h'], 'MAX_FONT_GLYPH_SIZE': 256, 'ADDITIONAL_TEXT_LINES_FOR_PEBBLE_H': [], 'MAX_APP_BINARY_SIZE': 65536, 'MAX_RESOURCES_SIZE': 1048576, 'MAX_APP_MEMORY_SIZE': 65536, 'MAX_WORKER_MEMORY_SIZE': 10240, 'NAME': 'chalk', 'BUNDLE_BIN_DIR': 'chalk', 'BUILD_DIR': 'chalk', 'MAX_RESOURCES_SIZE_APPSTORE': 262144, 'DEFINES': ['PBL_PLATFORM_CHALK', 'PBL_COLOR', 'PBL_ROUND', 'PBL_MICROPHONE', 'PBL_SMARTSTRAP', 'PBL_HEALTH', 'PBL_COMPASS', 'PBL_SMARTSTRAP_POWER', 'PBL_DISPLAY_WIDTH=180', 'PBL_DISPLAY_HEIGHT=180']}
 PLATFORM_NAME = 'chalk'
 PREFIX = '/usr/local'
-PROJECT_INFO = {'appKeys': {'ControlKeyResetRequest': 1, 'ControlKeyUnsupportedError': 4, 'ControlKeyChunk': 3, 'ControlKeyResetComplete': 2}, u'sdkVersion': u'3', u'projectType': u'rocky', u'uuid': u'196eadf4-4d09-4e5f-a6ad-0dc45b484e96', 'messageKeys': {'ControlKeyResetRequest': 1, 'ControlKeyUnsupportedError': 4, 'ControlKeyChunk': 3, 'ControlKeyResetComplete': 2}, 'companyName': u'MakeAwesomeHappen', u'enableMultiJS': True, u'watchapp': {u'watchface': True}, 'versionLabel': u'1.0', 'longName': u'weather', u'displayName': u'weather', 'shortName': u'weather', u'main': {u'rockyjs': u'src/rocky/index.js', u'pkjs': u'src/pkjs/index.js'}, u'resources': {u'media': []}, 'name': u'weather'}
+PROJECT_INFO = {'appKeys': {'ControlKeyResetRequest': 1, 'ControlKeyUnsupportedError': 4, 'ControlKeyChunk': 3, 'ControlKeyResetComplete': 2}, u'sdkVersion': u'3', u'projectType': u'rocky', u'uuid': u'196eadf4-4d09-4e5f-a6ad-0dc45b484e96', 'messageKeys': {'ControlKeyResetRequest': 1, 'ControlKeyUnsupportedError': 4, 'ControlKeyChunk': 3, 'ControlKeyResetComplete': 2}, 'companyName': u'KsMomOf2', u'enableMultiJS': True, u'watchapp': {u'watchface': True}, 'versionLabel': u'1.0', 'longName': u'Analog Weather', u'displayName': u'Analog Weather', 'shortName': u'Analog Weather', u'main': {u'rockyjs': u'src/rocky/index.js', u'pkjs': u'src/pkjs/index.js'}, u'resources': {u'media': []}, 'name': u'weather'}
 REQUESTED_PLATFORMS = []
 RESOURCES_JSON = []
 RPATH_ST = '-Wl,-rpath,%s'
@@ -62,7 +62,7 @@ STLIB_MARKER = None
 STLIB_ST = '-l%s'
 SUPPORTED_PLATFORMS = ['diorite', 'basalt', 'chalk', 'emery']
 TARGET_PLATFORMS = ['emery', 'diorite', 'chalk', 'basalt']
-TIMESTAMP = 1544879630
+TIMESTAMP = 1544880252
 USE_GROUPS = True
 VERBOSE = 0
 WEBPACK = '/home/ksmomof2/.pebble-sdk/SDKs/current/node_modules/.bin/webpack'

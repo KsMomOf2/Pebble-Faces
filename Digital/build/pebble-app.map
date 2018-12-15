@@ -1167,7 +1167,7 @@ LOAD /home/ksmomof2/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gc
  .note.gnu.build-id
                 0x0000000000000084       0x24 linker stubs
 
-.text           0x00000000000000a8      0x716
+.text           0x00000000000000a8      0x718
  *(.text)
  .text          0x00000000000000a8       0x14 /home/ksmomof2/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  *(.text.*)
@@ -1322,8 +1322,8 @@ LOAD /home/ksmomof2/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gc
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00000000000006f0       0xce src/c/Digital.c.33.o
-                                         0xd1 (size before relaxing)
+                0x00000000000006f0       0xd0 src/c/Digital.c.33.o
+                                         0xd3 (size before relaxing)
 
 .glue_7         0x00000000000007c0        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs

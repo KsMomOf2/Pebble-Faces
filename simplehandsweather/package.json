@@ -1,6 +1,6 @@
 {
   "name": "weather",
-  "author": "MakeAwesomeHappen",
+  "author": "KsMomOf2",
   "version": "1.0.0",
   "keywords": ["pebble-app"],
   "private": true,
@@ -10,7 +10,7 @@
       "rockyjs": "src/rocky/index.js",
       "pkjs": "src/pkjs/index.js"
     },
-    "displayName": "weather",
+    "displayName": "Analog Weather",
     "uuid": "196eadf4-4d09-4e5f-a6ad-0dc45b484e96",
     "projectType": "rocky",
     "sdkVersion": "3",

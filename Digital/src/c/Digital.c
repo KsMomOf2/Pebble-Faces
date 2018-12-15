@@ -123,7 +123,7 @@ Tuple *conditions_tuple = dict_find(iterator, MESSAGE_KEY_CONDITIONS);
 // If all data is available, use it
 if (temp_tuple && conditions_tuple) {
 		APP_LOG(APP_LOG_LEVEL_ERROR, "tick_handler inside if");
-	  snprintf(temperature_buffer, sizeof(temperature_buffer), "%dF", (int) temp_tuple->value->int32);
+	  snprintf(temperature_buffer, sizeof(temperature_buffer), "%dºF", (int) temp_tuple->value->int32);
 	  snprintf(conditions_buffer, sizeof(conditions_buffer), "%s", conditions_tuple->value->cstring);
 	  // Assemble full string and display
 	  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "%s, %s", temperature_buffer, conditions_buffer);

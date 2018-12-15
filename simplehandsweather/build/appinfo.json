@@ -8,7 +8,7 @@
         "ControlKeyChunk": 3, 
         "ControlKeyResetComplete": 2
     }, 
-    "companyName": "MakeAwesomeHappen", 
+    "companyName": "KsMomOf2", 
     "enableMultiJS": true, 
     "sdkVersion": "3", 
     "capabilities": [], 
@@ -21,9 +21,9 @@
     "watchapp": {
         "watchface": true
     }, 
-    "longName": "weather", 
-    "displayName": "weather", 
-    "shortName": "weather", 
+    "longName": "Analog Weather", 
+    "displayName": "Analog Weather", 
+    "shortName": "Analog Weather", 
     "main": {
         "rockyjs": "src/rocky/index.js", 
         "pkjs": "src/pkjs/index.js"

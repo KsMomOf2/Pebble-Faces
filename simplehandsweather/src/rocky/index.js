@@ -75,7 +75,7 @@ function drawWeather(ctx, weather) {
   ctx.fillStyle = 'lightgray';
   ctx.textAlign = 'center';
  // ctx.font = '14px Gothic';
- ctx.font = '24px Gothic';
+ ctx.font = '28px Gothic';
   ctx.fillText(weatherString, ctx.canvas.unobstructedWidth / 2, 2);
 }
 
