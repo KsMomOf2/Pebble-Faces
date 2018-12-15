@@ -1,0 +1,35 @@
+{
+    "versionLabel": "1.0", 
+    "projectType": "rocky", 
+    "name": "weather", 
+    "messageKeys": {
+        "ControlKeyResetRequest": 1, 
+        "ControlKeyUnsupportedError": 4, 
+        "ControlKeyChunk": 3, 
+        "ControlKeyResetComplete": 2
+    }, 
+    "companyName": "KsMomOf2", 
+    "enableMultiJS": true, 
+    "sdkVersion": "3", 
+    "capabilities": [], 
+    "appKeys": {
+        "ControlKeyResetRequest": 1, 
+        "ControlKeyUnsupportedError": 4, 
+        "ControlKeyChunk": 3, 
+        "ControlKeyResetComplete": 2
+    }, 
+    "watchapp": {
+        "watchface": true
+    }, 
+    "longName": "Analog Weather", 
+    "displayName": "Analog Weather", 
+    "shortName": "Analog Weather", 
+    "main": {
+        "rockyjs": "src/rocky/index.js", 
+        "pkjs": "src/pkjs/index.js"
+    }, 
+    "resources": {
+        "media": []
+    }, 
+    "uuid": "196eadf4-4d09-4e5f-a6ad-0dc45b484e96"
+}
