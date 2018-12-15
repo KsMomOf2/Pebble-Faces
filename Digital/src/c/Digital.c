@@ -1,5 +1,4 @@
-#include <pebble.h>
-// TODO Need to add comments
+#include <pebble.h> 
 static Window *s_main_window;
 static TextLayer *s_time_layer;
 // Declare globally
@@ -67,7 +66,6 @@ static void main_window_load(Window *window) {
 	text_layer_set_font(s_weather_layer, s_weather_font);
 	
 	layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_weather_layer));
-	
 }
 
 static void main_window_unload(Window *window) {
@@ -95,6 +93,7 @@ static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
 	
 	// Get weather update every 30 minutes
 	if (tick_time->tm_min % 30 == 0) {
+	APP_LOG(APP_LOG_LEVEL_ERROR, "tick_handler ... checking weather");
 		// Begin dictionary
 		DictionaryIterator*iter;
 		app_message_outbox_begin(&iter);
@@ -120,10 +119,11 @@ static char weather_layer_buffer[32];
 //Read tuples for data
 Tuple *temp_tuple = dict_find(iterator, MESSAGE_KEY_TEMPERATURE);
 Tuple *conditions_tuple = dict_find(iterator, MESSAGE_KEY_CONDITIONS);
-
+	APP_LOG(APP_LOG_LEVEL_ERROR, "tick_handler!");
 // If all data is available, use it
 if (temp_tuple && conditions_tuple) {
-	  snprintf(temperature_buffer, sizeof(temperature_buffer), "%dC", (int) temp_tuple->value->int32);
+		APP_LOG(APP_LOG_LEVEL_ERROR, "tick_handler inside if");
+	  snprintf(temperature_buffer, sizeof(temperature_buffer), "%dF", (int) temp_tuple->value->int32);
 	  snprintf(conditions_buffer, sizeof(conditions_buffer), "%s", conditions_tuple->value->cstring);
 	  // Assemble full string and display
 	  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "%s, %s", temperature_buffer, conditions_buffer);

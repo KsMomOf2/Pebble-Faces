@@ -103,7 +103,7 @@
 				var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
 				pos.coords.latitude + '&lon=' + pos.coords.longitude + '&appid=' + myAPIKey;
 				
-				console.log(url);
+				//console.log(url);
 				
 				// Send request to OpenWeatherMap
 				xhrRequest(url, 'GET', 
@@ -113,6 +113,7 @@
 	
 						//Temperature in Kelvin requires adjustment
 						var temperature = Math.round(json.main.temp - 273.15);
+						var fahrenheit = temperature * 9 / 5 + 32;
 						console.log('Temperature is ' + temperature);
 				
 						// Conditions
@@ -120,11 +121,17 @@
 						console.log('Conditions are ' + conditions);
 											
 					// Assemble Dictionary using our keys
+					/*
 						var dictionary = {
 							'TEMPERATURE': temperature,
 							'CONDITIONS': conditions
 						};
-							
+	*/
+						var dictionary = {
+							'TEMPERATURE': fahrenheit,
+							'CONDITIONS': conditions
+						};
+						
 							// Send to Pebble
 							Pebble.sendAppMessage(dictionary, 
 							function(e) {
